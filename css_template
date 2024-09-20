@@ -16,20 +16,29 @@
 
 /* Reset margins                          */
 
-body, h1, h2, h3, h4, p, ul, ol {
-    margin: 0
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    text-wrap: balance;
+}
+
+p, li {
+    text-wrap: pretty;
+}
+
+header, footer, main, section, article {
+    container-type: inline-size;
 }
 
 /* Set body                               */
 
 body {
     font-family: 'Outfit', 'sans-serif';
-    width: 100vw;
-    min-width: 320px;
+    width: 100%;
+    min-width: 20rem;
     background-color:  hsl(var());
     line-height: 150%;
     letter-spacing: 0px;
-    font-size: 1rem;
+    font-size: .75rem;
     color: hsl(var())
 }
 
@@ -71,9 +80,10 @@ img {
 
 .flex {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+.grid {
+    display: grid
 }
 
 /* Font Classes                   */
