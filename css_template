@@ -38,7 +38,7 @@ body {
     background-color:  hsl(var());
     line-height: 150%;
     letter-spacing: 0px;
-    font-size: .75rem;
+    font-size: 1rem;
     color: hsl(var())
 }
 
